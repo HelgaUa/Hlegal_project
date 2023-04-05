@@ -1,0 +1,40 @@
+
+.services {
+
+    &-logo-img {
+        width: 168px;
+
+        @media (min-width: 768px) {
+            width: 302px;
+        }
+    }
+    
+    &-top-container {
+        padding-top: 132px;
+        margin-bottom: 80px;
+
+        @media (min-width: 768px) {
+            padding-top: 280px;
+        }
+
+        @media (min-width: 1440px) {
+            padding-top: 176px;
+        }
+
+    }
+    
+    &-footer-wrapper {
+        padding-top: 30px;
+        
+        @media (min-width: 768px) {
+            padding-top: 29px;
+            
+        }
+    }
+    
+    &-footer-rights {
+        @media (min-width: 768px) {
+            margin-top: 25px;
+        }
+    }  
+}

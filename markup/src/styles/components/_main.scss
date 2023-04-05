@@ -1,0 +1,139 @@
+/*Main start*/
+.top-container {
+    position: relative;
+    padding-bottom: 32px;
+    margin-bottom: 50px;
+    background-image: var(--bg-gradient);
+    color: var(--main-color);
+    border-radius: 0px 0px 12px 12px;
+
+    @media (min-width: 768px) {
+        padding-bottom: 0;
+        margin-bottom: 78px;
+    }
+
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        height: 10px;
+        border-radius: 0px 0px 12px 12px;
+        transform: translate(-50%, 0);
+    }
+
+    &::before {
+        bottom: -10px;
+        width: 90%;
+        background: #CACADB;
+
+        @media (min-width: 768px) {
+            width: 95%;
+        }
+    }
+
+    &::after {
+        bottom: -20px;
+        width: 80%;
+        background: #E7E7F2;
+
+        @media (min-width: 768px) {
+            width: 90%;
+        }
+    }
+}
+
+.main-screen {
+    position: relative;
+    height: 100vh;
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translate(0, -50%);
+    }
+
+    &__logo-bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -500px;
+        right: -500px;
+        text-align: center;
+
+    
+        .logo-img {
+            height: 100%;
+            width: auto;
+            max-width: none;
+        }
+    }
+
+    &__arrow-link {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        width: 42px;
+        height: 42px;
+        transform: translate(-50%, 0);
+        border: 2px solid var(--main-color);
+        border-radius: 50%;
+        opacity: 0.5;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            border: solid var(--main-color);
+            border-width: 0 2px 2px 0;
+            padding: 6px;
+            transform: translate(12px, 4px) rotate(45deg);
+        }
+    
+        &:hover {
+            opacity: 1;
+            border-color: var(--accent-active-color);
+            transition: all 0.2s linear;
+
+            &::after {
+                content: '';
+                border-color: var(--accent-active-color);
+                transition: border 0.2s linear;    
+            }
+        }
+    }
+}
+.main {
+    &-wrapper {
+        padding-top: 290px;
+        padding-bottom: 30px; 
+    }
+
+    &-title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+
+        @media (min-width: 768px) {
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        @media (min-width: 1440px) {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+}
+
+
+
+
+
+
+    
+
+

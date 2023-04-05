@@ -1,0 +1,124 @@
+.footer {
+    &-wrapper {
+        position: relative;
+        padding-bottom: 30px;
+        margin: 0 auto;
+        text-align: center;
+        background: var(--bg-add-color);
+
+        @media (min-width: 768px) {
+            padding-top: 0;
+        }
+
+
+        @media (min-width: 768px) {
+            text-align: start;
+        }
+    }
+
+    &-contacts {
+        color: #323264;
+
+        address {
+            font-style: normal;
+
+            @media (min-width: 768px) {
+            display: inline-block;
+            }
+        }
+
+        &__map {
+            margin-bottom: 21px;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--active-color);
+
+            @media (min-width: 768px) {
+                margin-bottom: 0;
+            }
+        }
+
+        &__fb {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 38px;
+            color: var(--active-color);
+
+            @media (min-width: 768px) {
+                display: inline-block;
+                }
+        }
+
+        &__tel {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 700;
+            color: #46466E;
+
+            @media (min-width: 768px) {
+                display: inline-block;
+                }
+        }
+
+        &__email {
+            margin-bottom: 25px;
+            font-weight: 700;
+            color: var(--active-color);
+
+            @media (min-width: 768px) {
+                margin-bottom: 0;
+            }
+        }
+
+        &__tel, &__fb, &__map, &__email {
+            transition: color .1s linear;
+
+            &:hover {
+                color: var(--accent-active-color);
+           }
+        }
+
+        &__tel, &__fb, address {
+            @media (min-width: 768px) {
+                position: relative;
+                margin-right: 20px;
+        
+                &::after {
+                    content:"";
+                    position: absolute;
+                    top: calc(50% - 3px);
+                    right: -14px;
+                    width: 6px;
+                    height: 6px;
+                    background-color: #E6E6F0;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    &-line {
+        
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+
+            &:first-child {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &-rights {
+        color: #B3B3BA;
+
+        @media (min-width: 768px) {
+            position: absolute;
+            right: 60px;
+            top:0;
+        }
+    }
+}

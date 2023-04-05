@@ -1,0 +1,54 @@
+
+.services {
+    &-cards {
+        h2 {
+            @extend .pink-gradient;
+            margin-bottom: 30px;
+
+            @media (min-width: 768px) {
+                margin-bottom: 60px;
+
+            }
+        }
+    }
+
+    &-list {
+
+        @media (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        &__item {
+            margin-bottom: 30px;
+            
+            @media (min-width: 768px) {
+                width: 45%;
+                margin-bottom: 60px;
+            }
+
+            @media (min-width: 1200px) {
+                width: 30%;
+                margin-bottom: 60px;
+            }
+
+        }
+
+        &__img {
+            margin-bottom: 22px;
+        }
+
+        &__title {     
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            padding-bottom: 15px;
+            color: var(--active-color);
+        }
+
+        &__info {
+
+        }
+    }
+}
